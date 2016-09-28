@@ -1,0 +1,261 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.right {
+    float: right !important;
+}
+.right li a {height: 50px; line-height: 50px!important; background: black!important; font-family: 'ProxBold'!important; font-size: 0.8em!important; text-transform: uppercase!important; letter-spacing: 1px;
+            border: 2px solid #1c7f03; text-align: center; border-radius: 5px; }
+.right li a:hover {height: 50px; line-height: 50px!important; background: #08090b!important; font-family: 'ProxBold'!important; font-size: 0.8em!important; text-transform: uppercase!important; letter-spacing: 2px;
+                  border: 2px solid #1c7f03; text-align: center; border-radius: 50px; margin-top: 5px; background: #1c7f03!important;}
+.right ul li > a {
+            color: #33CC00;
+            display: block;
+            font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+            font-size: 0.8125rem;
+            font-weight: normal;
+            text-transform: none;
+            width: 100%;
+
+            margin-right: 60px;
+            margin-top: 10px;
+            width: 150px !important;
+           }
+.anim { transition: all 0.7s ease 0s;}
+ul, li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+nav {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+  font-family: "Century Gothic";
+}
+
+nav img {
+  /*padding-left: 5%;*/
+  cursor: pointer;
+}
+
+.navicon {
+  cursor: pointer;
+}
+
+#imgLogo:hover {
+  transform: rotate3d(3deg);
+}
+
+.accordeon {
+  display: flex;
+  justify-content: space-between;
+  background-color: #373737;
+  width: 100%;
+  height: 100%;
+}
+
+.acc {
+  border: 1px solid black;
+  width: 100%;
+  height: 85%;
+  transition: all .5s ease-in;
+  overflow: hidden;
+  position: relative;
+}
+
+.acc h1 {
+  font-family: 'Lobster', cursive;
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+  color: #1C7F03;
+  transform: rotate(-7.5deg);
+}
+
+.titreAcc {
+  transition: all 1s linear;
+  position: relative;
+  z-index: 999999;
+}
+
+#acc1 .titreAcc{
+  background-image: url("../img/actus3.jpg");
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: left;
+}
+
+#acc2 .titreAcc{
+  background-image: url("../img/referencement.jpg");
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: top;
+  animation-delay: .3s;
+}
+
+#acc3 .titreAcc{
+  background-image: url("../img/espaceperso.jpg");
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: right;
+  animation-delay: .6s;
+}
+
+.titreMenu {
+  font-size: 3vw;
+
+}
+
+.contenuAcc {
+  display: flex;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*overflow-y: scroll;*/
+}
+
+.contenu {
+  /*margin: 10% 30%;*/
+  width: 100%;
+  height:95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: space-around;*/
+  font-family: 'Century Gothic';
+  padding-top: 2%;
+  overflow-y: scroll;
+}
+
+
+/*ACTUALITE*/
+.Actu1{
+  border-top: 2px white solid;
+  border-bottom: 2px white solid;
+  width: 60%;
+  margin: 2.5% 20% 1.25% 20%;
+  color: white;
+  font-size: 2vw;
+  background-color: #585656;
+}
+
+.Actu1 p{
+  margin-left: 30%;
+  opacity: .7;
+
+}
+
+.FlyDiv img{
+  width: 22.5%;
+  height: 27.5%;
+  background-size: cover;
+  float: left;
+  margin: 4.5% 10% 4.5% 5%;
+}
+
+.date {
+  opacity: .5;
+  letter-spacing: 1px;
+  font-size: 1vw;
+  margin-top: -2.5%;
+}
+/*FIN ACTUALITE*/
+
+/*ARTISTES*/
+
+.Artistes1{
+  border-top:2px white solid;
+   border-bottom:2px white solid;
+  width: 80%;
+  margin: 2.5% 10% 1.25% 10%;
+  color: white;
+  font-size: 1.5vw;
+  background-color: #585656;
+  display: inline-block;
+  padding: 2% 0 2% 0;
+}
+
+h4{
+  margin: 27.5% 40% 0% 40%;
+}
+
+.bio {
+  text-align: center;
+  width: 70%;
+  margin: 3% 15% 0 15%;
+}
+
+.ArtisteTxt{
+  margin-right: 20%;
+  width: 40%;
+  float: right;
+
+}
+
+.Artistes1 p{
+  opacity: .7;
+}
+.LogoDiv{
+  width: 25%;
+  float: left;
+  margin-left: 5%;
+
+}
+.LogoDiv img{
+  width: 100%;
+  background-size: cover;
+}
+
+.facebook img {
+  width: 10%;
+}
+/*FIN ARTISTES*/
+
+.footer {
+  margin-top: 5%;
+  width: 100%;
+  /*height: 10%;*/
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2% 0%;
+  color: white;
+  opacity: .5;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 600px) {
+    .accordeon {
+      display: flex;
+      flex-direction: column;
+    }
+  }
